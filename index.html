@@ -9,11 +9,11 @@
 </head>
 <body style="margin: 0;">
     <div id="div1"></div>
-        <img id="vrch" class="icons" src="/test/img/vrch.svg" alt="top of gmail icon">
+        <img style="margin-top: 1.6em;" id="vrch" class="icons" src="/test/img/vrch.svg" alt="top of gmail icon">
         <img id="spodok" class="icons" src="/test/img/spodok.svg" alt="bottom of gmail icon">
     <div id="div2"></div>
     <div id="content">
-        <h1><strong>Vitajte na stránke<br>Maily na prenájom!</strong></h1>
+        <h1><strong>Vitajte na stránke<br>maily na prenájom!</strong></h1>
         <div></div>
     </div>
     <script>
@@ -24,18 +24,17 @@
         document.addEventListener("DOMContentLoaded", function(){
             div1.classList.add("divko1"); 
             div2.classList.add("divko2");
-            vrch.classList.add("vrch");
             spodok.classList.add("spodok"); 
             setTimeout(()=>{
                 div1.remove();
                 div2.remove();
                 setTimeout(()=>{
-                    vrch.classList.add("opacity0");
-                    spodok.classList.add("opacity0");
+                    vrch.classList.add("opacity");
+                    spodok.classList.add("opacity");
                     setTimeout(()=>{
                         vrch.remove();
                         spodok.remove();
-                        document.getElementById("content").style.visibility = "visible";
+                        document.getElementById("content").style.display = "block";
                         document.getElementById("content").style.opacity = 1;
                     },1000);
             },500);
