@@ -59,14 +59,14 @@ body {
 
 #content{
     display: none;
-    opacity: 0;
     transition: opacity 1.5s ease;
+    opacity: 0;
 }
 /* #content *{
-    display: flex; 
+    opacity: 0;
 } */
 
-h1 {
+#nadpis {
     text-align: center;
     /* justify-content: center; ak ej toto flex položka (pravidla vyššie) tak toto tu musí byť aby sa to dalo do stredu*/ 
     margin-top: 4em;

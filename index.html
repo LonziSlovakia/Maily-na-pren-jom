@@ -13,7 +13,7 @@
         <img id="spodok" class="icons" src="/test/img/spodok.svg" alt="bottom of gmail icon">
     <div id="div2"></div>
     <div id="content">
-        <h1><strong>Vitajte na stránke<br>maily na prenájom!</strong></h1>
+        <h1 id="nadpis"><strong>Vitajte na stránke<br>maily na prenájom!</strong></h1>
         <div></div>
     </div>
     <script>
@@ -35,7 +35,9 @@
                         vrch.remove();
                         spodok.remove();
                         document.getElementById("content").style.display = "block";
-                        document.getElementById("content").style.opacity = 1;
+                        setTimeout(()=>{
+                            document.getElementById("content").style.opacity = 1;
+                        },100);
                     },1000);
             },500);
             },1800);
