@@ -14,7 +14,7 @@
     <div id="div2"></div>
     <div id="content">
         <!-- content belongs here -->
-        MUHEHE
+        Mueheh
     </div>
     <script>
         const div1 = document.getElementById("div1"),
@@ -30,12 +30,15 @@
                 div1.remove();
                 div2.remove();
                 setTimeout(()=>{
-                    vrch.classList.add("opacity");
-                    spodok.classList.add("opacity");
+                    vrch.classList.add("opacity0");
+                    spodok.classList.add("opacity0");
                     setTimeout(()=>{
                         vrch.remove();
-                        spodok.remove();git -version
-                        document.getElementById("content").style.visibility = "visible";
+                        spodok.remove();
+                        setTimeout(()=>{
+                            document.getElementById("content").style.visibility = "visible";
+                            document.getElementById("content").style.opacity = 1;
+                        },500)
                     },1000);
             },500);
             },1800);
