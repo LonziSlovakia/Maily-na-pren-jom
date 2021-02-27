@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maily na prenajom</title>
+    <link href="./style.css" type="text/css" rel="stylesheet">
+</head>
+<body style="margin: 0;">
+    <div id="div1"></div>
+        <img id="vrch" style="margin-top:1.6em;"class="icons" src="/test/img/vrch.svg" alt="top of gmail icon">
+        <img id="spodok" style="margin-top:3.7em;" class="icons" src="/test/img/spodok.svg" alt="bottom of gmail icon">
+    <div id="div2"></div>
+    <div id="content">
+        <!-- content belongs here -->
+        MUHEHE
+    </div>
+    <script>
+        const div1 = document.getElementById("div1"),
+        div2 = document.getElementById("div2"),
+        vrch = document.getElementById("vrch"),
+        spodok = document.getElementById("spodok");
+        document.addEventListener("DOMContentLoaded", function(){
+            div1.classList.add("divko1"); 
+            div2.classList.add("divko2");
+            vrch.classList.add("vrch");
+            spodok.classList.add("spodok"); 
+            setTimeout(()=>{
+                div1.remove();
+                div2.remove();
+                setTimeout(()=>{
+                    vrch.classList.add("opacity");
+                    spodok.classList.add("opacity");
+                    setTimeout(()=>{
+                        vrch.remove();
+                        spodok.remove();git -version
+                        document.getElementById("content").style.visibility = "visible";
+                    },1000);
+            },500);
+            },1800);
+        });
+    </script>
+</body>
+</html>
